@@ -15,8 +15,13 @@
     <meta name="generator" content="BoxBilling {{ guest.system_version }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel='stylesheet' type='text/css' href="{{ ('css/huraga-' ~ settings.color_scheme ~ '.css') | asset_url }}">
-    <link rel='stylesheet' type='text/css' href="{{ 'css/plugins/jquery.jgrowl.css' | asset_url }}">
+    <link rel='stylesheet' type='text/css' href="{{ ('styles/styles.css') | asset_url }}">
+    <!-- bootstrap css -->
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel='stylesheet' type='text/css' href="{{ 'css/plugins/jquery.jgrowl.css' | asset_url }}"> -->
 
     <link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ 'img/icons/apple-touch-icon-114-precomposed.png' | asset_url }}">

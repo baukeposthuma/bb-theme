@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "GothamLight";
+  src: url(../fonts/gotham-light.otf);
+}
+@font-face {
+  font-family: "GothamBook";
+  src: url(../fonts/gotham-book.otf);
+}
+@font-face {
+  font-family: "GothamBold";
+  src: url(../fonts/gotham-bold.otf);
+}
+@font-face {
+  font-family: "BebasNeueBold";
+  src: url(../fonts/bebas-neue-bold.otf);
+}
+@font-face {
+  font-family: "sohne-woff";
+  src: url(./font/Sohne-latin-basic.woff2);
+}
+/* Application-wide Styles */
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+  color: #3c4257;
+}
+
+h1 {
+  color: #635bff;
+  font-family: "sohne-woff", Helvetica Neue, Arial, sans-serif;
+  font-size: 28px;
+}
+
+h2, h3 {
+  color: #635bff;
+  font-family: "sohne-woff", Helvetica Neue, Arial, sans-serif;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  font-family: "sohne-woff", Helvetica Neue, Arial, sans-serif;
+  letter-spacing: -0.2px;
+  color: #3c4257;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: #635bff;
+  cursor: pointer;
+}
+
+fieldset {
+  border: unset;
+}
+
+/* Login page style */
+.container.login form {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.container.login form .control-group {
+  padding: 0;
+  border: none;
+}
+
+.container.login .login-footer:before,
+.container.login .login-footer:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.container.login .login-footer:after {
+  clear: both;
+}
+
+.container.login .login-footer li {
+  display: inline-block;
+}
+
+/* Login page style */
+.container.login {
+  width: 540px;
+  margin-top: 150px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.container.login h1 {
+  padding-bottom: 40px;
+  padding-left: 20px;
+  text-align: left !important;
+}
+.container.login h1 img {
+  height: 50px;
+}
+.container.login h4 {
+  margin-bottom: 0;
+}
+.container.login .data-block {
+  padding: 56px 48px;
+  box-shadow: 0 15px 35px 0 rgba(60, 66, 87, 0.08), 0 5px 15px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.container.login .data-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container.login form {
+  margin-top: 20px;
+}
+.container.login form .control-group + .control-group {
+  margin-top: 32px;
+}
+.container.login form .form-actions {
+  padding: 32px 0 0;
+}
+.container.login form label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #3c4257;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+.container.login form input[type=text],
+.container.login form input[type=password] {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 4px;
+  border: unset;
+  flex: 1 1 auto;
+  width: 100%;
+  display: inline-flex;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.container.login form input[type=text]::placeholder,
+.container.login form input[type=password]::placeholder {
+  color: transparent;
+}
+.container.login form label.checkbox {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+.container.login form label.checkbox input[type=checkbox] {
+  margin-right: 6px;
+}
+.container.login form .btn {
+  background-color: #635bff;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(69, 56, 255, 0.8) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+  min-height: 44px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  margin: 0 auto;
+}
+.container.login .login-footer {
+  margin-top: 8px;
+  text-align: right;
+}
+.container.login .login-footer li + li {
+  margin-left: 6px;
+}
+.container.login .login-footer a {
+  color: #635bff;
+}
+.container.login .help-block span {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  list-height: 20px;
+  color: #3c4257;
+}
